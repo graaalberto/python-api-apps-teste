@@ -1,0 +1,25 @@
+# Frameworks para APIs
+flask==3.0.3
+flask-session==0.5.0
+fastapi==0.115.0
+uvicorn==0.32.0
+
+# Banco de dados e ORM
+sqlalchemy==2.0.36
+pymysql==1.1.1         # suporte a MySQL/MariaDB
+psycopg2-binary==2.9.10 # suporte a PostgreSQL
+
+# Autenticação e segurança
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Aplicativos desktop
+pyqt5==5.15.11
+kivy==2.3.0
+
+# Aplicativos mobile (via Kivy ou BeeWare)
+beeware==0.3.0
+
+# Utilidades
+requests==2.32.3
+python-dotenv==1.0.1
