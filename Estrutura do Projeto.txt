@@ -1,0 +1,25 @@
+projeto_alunos_py/
+│
+├── app.py             # Servidor principal Flask
+├── db.py              # Conexão e inicialização do banco
+├── init.sql           # Script SQL para criar tabelas
+├── templates/
+│   ├── index.html
+│   ├── cadastro.html
+│   ├── login.html
+│   └── notas.html
+└── static/
+    └── style.css      # Arquivo CSS para estilizar
+
+//Dependências
+//No terminal: pip install flask flask-session sqlite3
+
+Resumindo
+Backend: Flask
+
+Banco: SQLite
+
+Frontend: HTML + CSS em templates/ e static/
+
+Você roda com: python app.py
+Acesse em http://localhost:5000

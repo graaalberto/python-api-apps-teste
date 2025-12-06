@@ -1,0 +1,14 @@
+<h2>Minhas Notas</h2>
+<form method="post">
+  Disciplina: <input name="disciplina"><br>
+  Valor: <input name="valor"><br>
+  Semestre: <input name="semestre"><br>
+  Observação: <input name="observacao"><br>
+  <button type="submit">Adicionar Nota</button>
+</form>
+
+<ul>
+  {% for n in notas %}
+    <li>{{n['disciplina']}} - {{n['valor']}}</li>
+  {% endfor %}
+</ul>
