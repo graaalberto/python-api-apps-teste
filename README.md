@@ -19,7 +19,7 @@ Ambiente de experimentação em Python para criação de APIs e aplicações mul
 
 ## 🚀 Como executar
 1. Clone o repositório:
-   git clone https://github.com/seu-usuario/python-api-apps-lab.git
+   git clone https://github.com/seu-usuario/python-api-apps-teste.git
    cd python-api-apps-teste
 
  2. Crie e ative um ambiente virtual:
