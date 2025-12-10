@@ -1,2 +1,41 @@
-<h1>Bem-vindo ao Sistema de Alunos</h1>
-<a href="/login">Login</a> | <a href="/cadastro">Cadastro</a>
+<link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}"/>
+<script src="{{url_for('static', filename='color-modes.js')}}"></script>
+<link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet" />
+<meta name="theme-color" content="#712cf9" />
+<link href="{{url_for('static', filename='sign-in.css')}}" rel="stylesheet" />
+<script src="{{url_for('static', filename='bootstrap.bundle.min.js')}}" class="astro-vvvwv3sm"></script>
+<style>
+    .aa{background: #f5000088;
+        color: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        width: auto;
+        margin: 10px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .diva{
+        flex-direction: row;
+        padding-top: 100px;
+    }
+    .cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       padding-top: 100px;
+
+    }
+</style>
+<div class="cont">
+<div class="h11">
+  <h1>Bem-vindo ao Sistema de Alunos</h1>  
+</div>
+<div class="diva">
+<a class="aa" href="/login">Login</a> | <a class="aa" href="/cadastro">Cadastro</a>
+</div>
+
+
+</div>

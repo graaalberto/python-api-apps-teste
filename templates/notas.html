@@ -1,14 +1,45 @@
-<h2>Minhas Notas</h2>
-<form method="post">
-  Disciplina: <input name="disciplina"><br>
-  Valor: <input name="valor"><br>
-  Semestre: <input name="semestre"><br>
-  Observação: <input name="observacao"><br>
-  <button type="submit">Adicionar Nota</button>
-</form>
-
-<ul>
-  {% for n in notas %}
-    <li>{{n['disciplina']}} - {{n['valor']}}</li>
-  {% endfor %}
-</ul>
+<link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}"/>
+<script src="{{url_for('static', filename='color-modes.js')}}"></script>
+<link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet" />
+<meta name="theme-color" content="#712cf9" />
+<link href="{{url_for('static', filename='sign-in.css')}}" rel="stylesheet" />
+<script src="{{url_for('static', filename='bootstrap.bundle.min.js')}}" class="astro-vvvwv3sm"></script>
+ <style>
+ 
+  div.grid{
+    background: #07070718;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+  }
+ </style>
+<main class="form-signin w-100 m-auto">
+  <form method="post">
+  <h2 class="h3 mb-3 fw-normal">Cadastro de Disciplinas</h2>
+  <input class="form-control" placeholder="Disciplina" name="disciplina"/>
+  <input class="form-control" placeholder="Valor" name="valor"/>
+  <input class="form-control" placeholder="Semestre" name="semestre"/>
+  <input class="form-control" placeholder="Observação" name="observacao"/><br/>
+  <button class="btn btn-primary w-100 py-2" type="submit">Cadastrar</button>
+  </form>
+ </main>
+  <div class="container">
+  <div class="row">
+  <div class="col grid"><h3>Disciplina</h3></div>
+  <div class="col grid"><h3>Valor</h3></div>
+  <div class="col grid"><h3>Semestre</h3></div>
+  <div class="col grid"><h3>Obs:</h3></div>
+  </div>
+</div>
+ {% for n in notas %}
+ <div class="container">
+  <div class="row">
+  <div class="col grid"><p>{{n['disciplina']}}</p></div>
+  <div class="col grid"> <p>{{n['valor']}}</p></div>
+  <div class="col grid"><p>{{n['semestre']}}</p></div>
+  <div class="col grid"><p>{{n['observacao']}}</p></div>
+  </div>
+</div>
+{% endfor %}

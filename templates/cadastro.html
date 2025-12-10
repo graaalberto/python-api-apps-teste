@@ -1,10 +1,19 @@
-<form method="post">
-  <h2>Cadastro</h2>
-  Nome: <input name="nome"><br>
-  Email: <input name="email"><br>
-  Senha: <input type="password" name="senha"><br>
-  Telefone: <input name="telefone"><br>
-  Documento: <input name="documento"><br>
-  Endereço: <input name="endereco"><br>
-  <button type="submit">Cadastrar</button>
+<link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}"/>
+<script src="{{url_for('static', filename='color-modes.js')}}"></script>
+<link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet" />
+<meta name="theme-color" content="#712cf9" />
+<link href="{{url_for('static', filename='sign-in.css')}}" rel="stylesheet" />
+<script src="{{url_for('static', filename='bootstrap.bundle.min.js')}}" class="astro-vvvwv3sm"></script>
+ <main class="form-signin w-100 m-auto">
+  <form method="post">
+  <h2 class="h3 mb-3 fw-normal">Cadastro</h2>
+  <input class="form-control" placeholder="nome" name="nome"/>
+  <input class="form-control" placeholder="email" name="email"/>
+  <input class="form-control" placeholder="senha" type="password" name="senha"/>
+  <input class="form-control" placeholder="Telefone" name="telefone"/>
+  <input class="form-control" placeholder="Doc" name="documento"/>
+  <input class="form-control" placeholder="Morada" name="endereco"/><br/>
+  <button class="btn btn-primary w-100 py-2" type="submit">Cadastrar</button>
 </form>
+ </main>
+

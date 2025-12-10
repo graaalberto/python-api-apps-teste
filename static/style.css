@@ -1,0 +1,22 @@
+/* Estilo para pagina de inicio da sessao */
+.form-container{
+flex-direction: column;
+display: flex;
+align-items: center;
+background: rgb(54, 39, 68);
+width: 500px;
+}
+.form-input{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.btn-enviar{
+    color: aliceblue;
+    padding: 0%;
+    background: rgb(48, 48, 107);
+    margin: 0%;
+    border-radius: 10px;
+    width: 100px;
+}
